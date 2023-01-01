@@ -242,6 +242,10 @@ body, html {
   display: flex;
   position: relative;
 }
+.function__step:hover {
+  transform: scale(1.025);
+  background-color: #f2eafb;
+}
 @media (min-width: 64rem) {
   .function__step {
     flex: 1;
@@ -291,10 +295,15 @@ body, html {
   -moz-column-gap: 2rem;
        column-gap: 2rem;
   row-gap: 2rem;
+  /*   display: flex;
+    flex-direction: column; */
 }
 @media (min-width: 64rem) {
   .cards {
     grid-template-columns: repeat(2, 1fr);
+    /*     display: flex;
+        justify-content: space-between;
+        flex-flow: row wrap; */
   }
 }
 
@@ -355,7 +364,7 @@ body, html {
 .card__like {
   background-color: white !important;
 }
-.card:hover {
+.card:hover { /* IE 9 */ /* Safari 3-8 */
   transform: scale(1.015);
 }
 .card:active {
@@ -625,4 +634,4 @@ body, html {
 .commandBtn a {
   text-decoration: none;
   color: inherit;
-}/*# sourceMappingURL=main.css.map */
+}

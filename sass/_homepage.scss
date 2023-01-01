@@ -108,6 +108,10 @@
       background-color: #f6f6f6;
       display: flex;
       position: relative;
+      &:hover {
+        transform: scale(1.025);
+        background-color: lighten($color-primary, 35%) 
+      }
   
       @media (min-width:64rem) {
         flex: 1;
